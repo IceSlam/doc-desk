@@ -1,0 +1,80 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.is-header {
+  background: url("../img/header_bg.png");
+  min-height: 600px;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 1.8125rem;
+
+  .is-navbar {
+    &__wrapper {
+      &-left {
+        display: flex;
+        align-items: center;
+        &__menu {
+          list-style: none;
+          display: flex;
+          li {
+            margin-right: 2.6875rem;
+            a {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 170%;
+              color: $mainColorBlack;
+            }
+          }
+        }
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &__link {
+          margin-left: 2rem;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 170%;
+          text-transform: uppercase;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          color: $mainColorBlack;
+          &.button {
+            border: 2px solid #3B2AFF;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 33.75px rgba(184, 184, 184, 0.26);
+            border-radius: 4px;
+            padding: .75rem 2rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: #3B2AFF;
+            text-transform: none;
+            text-decoration: none;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            &:hover {
+              background-color: #3B2AFF;
+              -webkit-transition: all .3s;
+              -moz-transition: all .3s;
+              -ms-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
