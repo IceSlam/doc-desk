@@ -8,7 +8,7 @@ body {
   -webkit-background-size: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% center;
   padding-top: 1.8125rem;
 
   .is-navbar {
@@ -27,6 +27,20 @@ body {
               font-size: 14px;
               line-height: 170%;
               color: $mainColorBlack;
+              text-decoration: none;
+              -webkit-transition: all .3s;
+              -moz-transition: all .3s;
+              -ms-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s;
+              &:hover {
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+                color: $mainColorBlue;
+              }
             }
           }
         }
@@ -45,6 +59,20 @@ body {
           text-transform: uppercase;
           font-feature-settings: 'pnum' on, 'lnum' on;
           color: $mainColorBlack;
+          text-decoration: none;
+          -webkit-transition: all .3s;
+          -moz-transition: all .3s;
+          -ms-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
+          &:hover {
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            color: $mainColorBlue;
+          }
           &.button {
             border: 2px solid #3B2AFF;
             box-sizing: border-box;
@@ -73,6 +101,42 @@ body {
               color: #ffffff;
             }
           }
+        }
+      }
+    }
+  }
+  &__intro {
+    margin-top: 11.875rem;
+    &__wrapper {
+      &_title {
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 115px;
+        line-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        letter-spacing: 0.16px;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #110596;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0 !important;
+      }
+      &_description {
+        margin-top: 3rem;
+        margin-bottom: 17.375rem;
+        p {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 46px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.16px;
+          font-feature-settings: 'pnum' on, 'lnum' on;
         }
       }
     }
