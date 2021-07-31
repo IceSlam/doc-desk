@@ -16053,6 +16053,7 @@ h3 {
 }
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #F9F7F7;
 }
 
 .is-header {
@@ -16161,5 +16162,43 @@ body {
   align-items: center;
   letter-spacing: 0.16px;
   font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.is-footer {
+  background-color: #fff;
+  padding: 2rem 3.125rem;
+}
+.is-footer__wrapper__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.is-footer__wrapper__contacts p {
+  margin: 0;
+  color: #0C0C0C;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+}
+.is-footer__wrapper__contacts p a {
+  color: #0C0C0C;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.is-footer__wrapper__contacts p a:hover {
+  transition: all 0.3s;
+  color: #2A27AD;
+}
+.is-footer__wrapper__copyright {
+  margin-top: 1.25rem;
+}
+.is-footer__wrapper__copyright p {
+  color: #0C0C0C;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
 }
 /*# sourceMappingURL=app.css.map */
