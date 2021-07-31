@@ -16201,4 +16201,76 @@ body {
   font-size: 14px;
   line-height: 170%;
 }
+
+.is-wrapper .is-what-says {
+  padding-bottom: 4.125rem;
+}
+.is-wrapper .is-what-says__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 4.5rem;
+  font-family: Raleway, sans-serif;
+}
+.is-wrapper .is-what-says__card {
+  box-shadow: 0px 0px 30px rgba(184, 184, 184, 0.26);
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+}
+.is-wrapper .is-what-says__card-img {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.is-wrapper .is-what-says__card-content {
+  padding: 2rem 1.875rem;
+  font-family: Raleway, sans-serif;
+  max-height: 454px;
+  height: 100%;
+  min-height: 454px;
+}
+.is-wrapper .is-what-says__card-content h3, .is-wrapper .is-what-says__card-content__author {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #0C0C0C;
+  font-family: Raleway, sans-serif;
+  margin-bottom: 1rem;
+}
+.is-wrapper .is-what-says__card-content__pos {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0C0C0C;
+}
+.is-wrapper .is-what-says__card-content__email {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0C0C0C;
+  margin-bottom: 2rem;
+}
+.is-wrapper .is-what-says__card-content__email a {
+  color: #0C0C0C;
+  transition: all 0.3s;
+  margin-bottom: 0;
+}
+.is-wrapper .is-what-says__card-content__email a:hover {
+  transition: all 0.3s;
+  color: #2A27AD !important;
+}
+.is-wrapper .is-what-says__card-content__description p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
 /*# sourceMappingURL=app.css.map */

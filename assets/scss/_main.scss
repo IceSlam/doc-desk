@@ -191,3 +191,89 @@ body {
     }
   }
 }
+
+// Main content
+
+.is-wrapper {
+  .is-what-says {
+    padding-bottom: 4.125rem;
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 120%;
+      text-align: center;
+      margin-bottom: 4.5rem;
+      font-family: Raleway, sans-serif;
+    }
+    &__card {
+      box-shadow: 0px 0px 30px rgba(184, 184, 184, 0.26);
+      background-color: #fff;
+      margin-bottom: 1.5rem;
+      &-img {
+        background-position: top center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 300px;
+      }
+      &-content {
+        padding: 2rem 1.875rem;
+        font-family: Raleway, sans-serif;
+        max-height: 454px;
+        height: 100%;
+        min-height: 454px;
+        h3, &__author {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 30px;
+          color: $mainColorBlack;
+          font-family: Raleway, sans-serif;
+          margin-bottom: 1rem;
+        }
+        &__pos {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: $mainColorBlack;
+        }
+        &__email {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+          text-decoration-line: underline;
+          color: $mainColorBlack;
+          margin-bottom: 2rem;
+          a {
+            color: $mainColorBlack;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            margin-bottom: 0;
+            &:hover {
+              -webkit-transition: all .3s;
+              -moz-transition: all .3s;
+              -ms-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s;
+              color: $mainColorBlue !important;
+            }
+          }
+        }
+        &__description {
+          p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
