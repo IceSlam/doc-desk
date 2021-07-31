@@ -195,7 +195,94 @@ body {
 // Main content
 
 .is-wrapper {
+  .is-integration {
+    padding-top: 8.25rem;
+    padding-bottom: 3rem;
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3rem ;
+      line-height: 120%;
+      text-align: center;
+      font-family: Raleway, sans-serif;
+    }
+    &__list {
+      counter-reset: item;
+      list-style-type: none;
+      margin-top: 3.75rem;
+      &-item {
+        position: relative;
+        margin-left: 3rem;
+        margin-bottom: 4rem;
+        padding-left: 1rem;
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: $mainColorBlack;
+        &:before {
+          position: absolute;
+          top: -34px;
+          left: -100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: counter(item) "";
+          counter-increment: item;
+          background-color: #FBFFFF;
+          border-radius: 4px;
+          font-family: Raleway, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 34px;
+          line-height: 30px;
+          color: $mainColorBlack;
+          width: 85px;
+          height: 85px;
+        }
+        &:nth-child(2) {
+          &:before {
+            background-color: #EAFBFB;
+          }
+        }
+        &:nth-child(3) {
+          &:before {
+            background-color: #E2F4F4;
+          }
+        }
+        &:nth-child(4) {
+          &:before {
+            background-color: #E0E2F1;
+          }
+        }
+        &:nth-child(5) {
+          &:before {
+            background-color: #BFBAE1;
+          }
+        }
+        &:nth-child(6) {
+          &:before {
+            background-color: #9C96E7;
+          }
+        }
+        & > ul {
+          list-style-type: disc;
+          & > li {
+            font-family: Raleway, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            color: $mainColorBlack;
+            margin-top: 1.5rem;
+          }
+        }
+      }
+    }
+  }
   .is-what-says {
+    padding-top: 2rem;
     padding-bottom: 4.125rem;
     &__title {
       font-style: normal;
