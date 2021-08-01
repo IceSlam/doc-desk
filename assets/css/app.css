@@ -16202,6 +16202,43 @@ body {
   line-height: 170%;
 }
 
+.is-wrapper .is-product {
+  padding: 8.125rem 0 10rem;
+}
+.is-wrapper .is-product__title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 120%;
+  text-align: center;
+  color: #0C0C0C;
+}
+.is-wrapper .is-product__card img {
+  width: auto;
+  max-width: 100%;
+  margin-left: -4rem;
+  max-height: 248px;
+}
+.is-wrapper .is-product__card h3 {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: #00143C;
+  margin: 0 auto;
+  height: 60px;
+}
+.is-wrapper .is-product__card p {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #00143C;
+  max-width: 70%;
+}
 .is-wrapper .is-what-can {
   padding: 8.1875rem 0 12.5rem;
   background-color: #EEEFF4;
@@ -16213,6 +16250,7 @@ body {
   font-size: 3rem;
   text-align: center;
   line-height: 120%;
+  color: #0C0C0C;
 }
 .is-wrapper .is-integration {
   padding-top: 8.25rem;

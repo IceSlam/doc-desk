@@ -195,6 +195,45 @@ body {
 // Main content
 
 .is-wrapper {
+  .is-product {
+    padding: 8.125rem 0 10rem;
+    &__title {
+      font-family: Raleway, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 120%;
+      text-align: center;
+      color: $mainColorBlack;
+    }
+    &__card {
+      img {
+        width: auto;
+        max-width: 100%;
+        margin-left: -4rem;
+        max-height: 248px;
+      }
+      h3 {
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 30px;
+        color: $mainColorDarkBlue;
+        margin: 0 auto;
+        height: 60px;
+      }
+      p {
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 30px;
+        color: $mainColorDarkBlue;
+        max-width: 70%;
+      }
+    }
+  }
   .is-what-can {
     padding: 8.1875rem 0 12.5rem;
     background-color: #EEEFF4;
@@ -205,6 +244,7 @@ body {
       font-size: 3rem;
       text-align: center;
       line-height: 120%;
+      color: $mainColorBlack;
     }
   }
   .is-integration {
