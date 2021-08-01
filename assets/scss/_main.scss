@@ -9,7 +9,7 @@ body {
   -webkit-background-size: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 50% center;
+  background-position: 50% 70%;
   padding-top: 1.8125rem;
 
   .is-navbar {
@@ -195,6 +195,43 @@ body {
 // Main content
 
 .is-wrapper {
+  .is-advantages {
+    &__tabs {
+      max-width: 765px;
+      &__list {
+        margin-left: 0;
+        margin-top: -105px;
+        background-color: rgba(255,255,255,0.4);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        &:before {
+          display: none;
+        }
+        li {
+          padding: 1.875rem;
+          a {
+            font-family: Raleway, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 34px;
+            color: $mainColorBlack;
+          }
+          &.uk-active {
+            background-color: #fff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            a {
+              border-bottom: none;
+              color: #3B2AFF;
+            }
+          }
+        }
+      }
+    }
+  }
   .is-product {
     padding: 8.125rem 0 10rem;
     &__title {
