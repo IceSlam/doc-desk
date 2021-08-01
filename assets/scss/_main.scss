@@ -195,6 +195,18 @@ body {
 // Main content
 
 .is-wrapper {
+  .is-what-can {
+    padding: 8.1875rem 0 12.5rem;
+    background-color: #EEEFF4;
+    &__title {
+      font-family: Raleway, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+      line-height: 120%;
+    }
+  }
   .is-integration {
     padding-top: 8.25rem;
     padding-bottom: 3rem;
