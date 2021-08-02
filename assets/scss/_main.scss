@@ -192,6 +192,77 @@ body {
   }
 }
 
+.uk-modal {
+  &.uk-open {
+    & > .uk-modal-dialog {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      padding: 5.5625rem 10.875rem 6.5rem 5.375rem;
+      box-shadow: 0px 0px 100px rgba(116, 116, 116, 0.1);
+    }
+  }
+  .uk-modal-dialog {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5.5625rem 10.875rem 6.5rem 5.375rem;
+    box-shadow: 0px 0px 100px rgba(116, 116, 116, 0.1);
+    width: 850px;
+    .uk-modal-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      svg {
+        path {
+          fill: gray;
+          -webkit-transition: all .3s;
+          -moz-transition: all .3s;
+          -ms-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            fill: $mainColorBlack;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+          }
+        }
+      }
+    }
+    h3 {
+      font-family: Raleway, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.25rem;
+      line-height: 30px;
+      color: $mainColorBlack;
+    }
+    p, li {
+      font-family: Raleway, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.25rem;
+      line-height: 30px;
+      color: $mainColorBlack;
+    }
+    ul {
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
 // Main content
 
 .is-wrapper {
@@ -205,6 +276,7 @@ body {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px;
+        margin-bottom: 0;
         &:before {
           display: none;
         }
@@ -228,6 +300,90 @@ body {
               color: #3B2AFF;
             }
           }
+        }
+      }
+    }
+    &__switcher {
+      -webkit-border-radius: 0 10px 10px 10px;
+      -moz-border-radius: 0 10px 10px 10px;
+      border-radius: 0 10px 10px 10px;
+      background-color: #fff;
+      padding: 5.1875rem 6rem;
+      &__card {
+        box-shadow: 0px 0px 100px rgba(116, 116, 116, 0.1);
+        border-radius: 10px;
+        background-color: #fff;
+        margin-bottom: 1.5rem;
+        padding: 3.125rem 1.6875rem;
+        h3 {
+          font-family: Raleway, sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.25rem;
+          line-height: 30px;
+          color: $mainColorBlack;
+          min-height: 60px;
+        }
+        button {
+          font-family: Raleway, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1rem;
+          line-height: 30px;
+          color: #3B2AFF;
+          text-decoration: none;
+          -webkit-transition: all .3s;
+          -moz-transition: all .3s;
+          -ms-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            color: $mainColorDarkBlue;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+          }
+        }
+        &__modal {
+          &.uk-open {
+            & > .uk-modal-dialog {
+              box-shadow: 0 0 100px rgba(116, 116, 116, 0.1) !important;
+              border-radius: 10px !important;
+            }
+          }
+        }
+      }
+      &__btn {
+        box-shadow: 0 0 33.75px rgba(184, 184, 184, 0.26);
+        border-radius: 4px;
+        color: #FFFFFF;
+        background-color: $mainColorBlue;
+        padding: 1.5rem 7.75rem;
+        display: inline-block;
+        margin: 0 auto;
+        text-decoration: none;
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 34px;
+          -webkit-transition: all .3s;
+          -moz-transition: all .3s;
+          -ms-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
+        &:hover {
+          background-color: $mainColorDarkBlue;
+          -webkit-transition: all .3s;
+          -moz-transition: all .3s;
+          -ms-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
         }
       }
     }

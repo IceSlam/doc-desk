@@ -16202,6 +16202,53 @@ body {
   line-height: 170%;
 }
 
+.uk-modal.uk-open > .uk-modal-dialog {
+  border-radius: 10px;
+  padding: 5.5625rem 10.875rem 6.5rem 5.375rem;
+  box-shadow: 0px 0px 100px rgba(116, 116, 116, 0.1);
+}
+.uk-modal .uk-modal-dialog {
+  border-radius: 10px;
+  padding: 5.5625rem 10.875rem 6.5rem 5.375rem;
+  box-shadow: 0px 0px 100px rgba(116, 116, 116, 0.1);
+  width: 850px;
+}
+.uk-modal .uk-modal-dialog .uk-modal-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.uk-modal .uk-modal-dialog .uk-modal-close svg path {
+  fill: gray;
+  transition: all 0.3s;
+}
+.uk-modal .uk-modal-dialog .uk-modal-close:hover svg path {
+  fill: #0C0C0C;
+  transition: all 0.3s;
+}
+.uk-modal .uk-modal-dialog h3 {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: #0C0C0C;
+}
+.uk-modal .uk-modal-dialog p, .uk-modal .uk-modal-dialog li {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: #0C0C0C;
+}
+.uk-modal .uk-modal-dialog ul li {
+  margin-bottom: 1rem;
+}
+
 .is-wrapper .is-advantages__tabs {
   max-width: 765px;
 }
@@ -16210,6 +16257,7 @@ body {
   margin-top: -105px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 4px;
+  margin-bottom: 0;
 }
 .is-wrapper .is-advantages__tabs__list:before {
   display: none;
@@ -16232,6 +16280,68 @@ body {
 .is-wrapper .is-advantages__tabs__list li.uk-active a {
   border-bottom: none;
   color: #3B2AFF;
+}
+.is-wrapper .is-advantages__switcher {
+  border-radius: 0 10px 10px 10px;
+  background-color: #fff;
+  padding: 5.1875rem 6rem;
+}
+.is-wrapper .is-advantages__switcher__card {
+  box-shadow: 0px 0px 100px rgba(116, 116, 116, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  padding: 3.125rem 1.6875rem;
+}
+.is-wrapper .is-advantages__switcher__card h3 {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: #0C0C0C;
+  min-height: 60px;
+}
+.is-wrapper .is-advantages__switcher__card button {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #3B2AFF;
+  text-decoration: none;
+  transition: all 0.3s;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.is-wrapper .is-advantages__switcher__card button:hover {
+  color: #00143C;
+  transition: all 0.3s;
+}
+.is-wrapper .is-advantages__switcher__card__modal.uk-open > .uk-modal-dialog {
+  box-shadow: 0 0 100px rgba(116, 116, 116, 0.1) !important;
+  border-radius: 10px !important;
+}
+.is-wrapper .is-advantages__switcher__btn {
+  box-shadow: 0 0 33.75px rgba(184, 184, 184, 0.26);
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #2A27AD;
+  padding: 1.5rem 7.75rem;
+  display: inline-block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 34px;
+  transition: all 0.3s;
+}
+.is-wrapper .is-advantages__switcher__btn:hover {
+  background-color: #00143C;
+  transition: all 0.3s;
 }
 .is-wrapper .is-product {
   padding: 8.125rem 0 10rem;
