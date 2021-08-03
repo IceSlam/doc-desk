@@ -1,0 +1,47 @@
+@media screen and (max-width: 429px) {
+  // Header
+  .is-header {
+    padding: 0;
+    .is-navbar {
+      background-color: #fff;
+      &__wrapper {
+        &-left {
+          padding: 1rem 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          box-sizing: border-box;
+          max-width: 95%;
+          &__menu {
+            display: none;
+          }
+          &__toggler {
+            display: block;
+            border: none;
+            background-color: transparent;
+            &.show {
+              opacity: .5;
+            }
+          }
+        }
+        &-right {
+          display: none;
+        }
+        #mobile-menu {
+          .uk-offcanvas-bar {
+            width: 100%;
+            left: -100%;
+            top: 64px;
+            background-color: $mainBodyBg;
+            color: $mainColorBlack;
+          }
+          &.uk-open {
+            .uk-offcanvas-bar {
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

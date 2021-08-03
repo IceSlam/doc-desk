@@ -45,6 +45,9 @@ body {
             }
           }
         }
+        &__toggler {
+          display: none;
+        }
       }
       &-right {
         display: flex;
