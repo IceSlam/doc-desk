@@ -78,7 +78,7 @@
         &-right {
           display: none;
         }
-        #mobile-menu {
+        &__sidebar {
           position: fixed;
           top: 64px;
           bottom: 0;
@@ -87,6 +87,7 @@
           left: -100%;
           width: 100%;
           transition: all .3s ease-in-out;
+          display: block;
           &.show {
             left: 0;
             transition: all .3s ease-in-out;
