@@ -46,13 +46,12 @@
                 </a>
               </li>
             </ul>
-            <a id="menu-toggler" class="is-navbar__wrapper-left__toggler" href="#mobile-menu" uk-toggle>
-              <img src="./assets/img/navbar_toggler.svg" alt="Тоглер">
+            <a id="menu-toggler" class="is-navbar__wrapper-left__toggler" href="#mobile-menu" onclick="showMenu()">
+              <span></span>
             </a>
           </div>
-          <div id="mobile-menu" uk-offcanvas>
-            <div class="uk-offcanvas-bar">
-              <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <div id="mobile-menu"class="is-navbar__wrapper__sidebar">
+            <div class="">
               <h3>Title</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
@@ -2591,5 +2590,6 @@
 
     <!-- Scripts -->
     <script src="./assets/js/app.min.js" type="module"></script>
+    <script src="./assets/js/toggler.js"></script>
   </body>
 </html>

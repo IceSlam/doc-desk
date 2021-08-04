@@ -11,7 +11,10 @@
           align-items: center;
           justify-content: space-between;
           box-sizing: border-box;
-          max-width: 95%;
+          position: fixed;
+          top: 0;
+          background-color: #fff;
+          z-index: 200;
           &__menu {
             display: none;
           }
@@ -19,8 +22,56 @@
             display: block;
             border: none;
             background-color: transparent;
+            padding: 11px 0;
+            span {
+              display: block;
+              width: 32px;
+              height: 2px;
+              -webkit-border-radius: 8px;
+              -moz-border-radius: 8px;
+              border-radius: 8px;
+              transition: all .3s;
+              position: relative;
+              background-color: $mainColorBlack;
+              &:before,
+              &:after {
+                position: absolute;
+                left: 0;
+                right: 0;
+                display: block;
+                content: '';
+                width: 32px;
+                height: 2px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                border-radius: 8px;
+                transition: all .3s;
+                background-color: $mainColorBlack;
+              }
+              &:before {
+                top: -12px;
+                transition: all .3s;
+              }
+              &:after {
+                bottom: -12px;
+                transition: all .3s;
+              }
+            }
             &.show {
-              opacity: .5;
+              span {
+                background-color: transparent;
+                transition: all .3s;
+                &:before {
+                  top: 0;
+                  transform: rotate(45deg);
+                  transition: all .3s;
+                }
+                &:after {
+                  bottom: 0;
+                  transform: rotate(-45deg);
+                  transition: all .3s;
+                }
+              }
             }
           }
         }
@@ -28,17 +79,17 @@
           display: none;
         }
         #mobile-menu {
-          .uk-offcanvas-bar {
-            width: 100%;
-            left: -100%;
-            top: 64px;
-            background-color: $mainBodyBg;
-            color: $mainColorBlack;
-          }
-          &.uk-open {
-            .uk-offcanvas-bar {
-              left: 0;
-            }
+          position: fixed;
+          top: 64px;
+          bottom: 0;
+          background: #fff;
+          z-index: 300;
+          left: -100%;
+          width: 100%;
+          transition: all .3s ease-in-out;
+          &.show {
+            left: 0;
+            transition: all .3s ease-in-out;
           }
         }
       }

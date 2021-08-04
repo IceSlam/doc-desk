@@ -13593,7 +13593,10 @@ body {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    max-width: 95%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 200;
   }
   .is-header .is-navbar__wrapper-left__menu {
     display: none;
@@ -13602,22 +13605,67 @@ body {
     display: block;
     border: none;
     background-color: transparent;
+    padding: 11px 0;
   }
-  .is-header .is-navbar__wrapper-left__toggler.show {
-    opacity: 0.5;
+  .is-header .is-navbar__wrapper-left__toggler span {
+    display: block;
+    width: 32px;
+    height: 2px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    position: relative;
+    background-color: #0C0C0C;
+  }
+  .is-header .is-navbar__wrapper-left__toggler span:before, .is-header .is-navbar__wrapper-left__toggler span:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    content: "";
+    width: 32px;
+    height: 2px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background-color: #0C0C0C;
+  }
+  .is-header .is-navbar__wrapper-left__toggler span:before {
+    top: -12px;
+    transition: all 0.3s;
+  }
+  .is-header .is-navbar__wrapper-left__toggler span:after {
+    bottom: -12px;
+    transition: all 0.3s;
+  }
+  .is-header .is-navbar__wrapper-left__toggler.show span {
+    background-color: transparent;
+    transition: all 0.3s;
+  }
+  .is-header .is-navbar__wrapper-left__toggler.show span:before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: all 0.3s;
+  }
+  .is-header .is-navbar__wrapper-left__toggler.show span:after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: all 0.3s;
   }
   .is-header .is-navbar__wrapper-right {
     display: none;
   }
-  .is-header .is-navbar__wrapper #mobile-menu .uk-offcanvas-bar {
-    width: 100%;
-    left: -100%;
+  .is-header .is-navbar__wrapper #mobile-menu {
+    position: fixed;
     top: 64px;
-    background-color: #F9F7F7;
-    color: #0C0C0C;
+    bottom: 0;
+    background: #fff;
+    z-index: 300;
+    left: -100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
   }
-  .is-header .is-navbar__wrapper #mobile-menu.uk-open .uk-offcanvas-bar {
+  .is-header .is-navbar__wrapper #mobile-menu.show {
     left: 0;
+    transition: all 0.3s ease-in-out;
   }
 }
 /*# sourceMappingURL=app.css.map */
