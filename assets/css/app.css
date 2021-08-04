@@ -12971,9 +12971,9 @@ body {
 .is-header {
   background: url("../img/header_bg.webp");
   min-height: 600px;
-  background-size: 100%;
+  background-size: 115%;
   background-repeat: no-repeat;
-  background-position: 50% 70%;
+  background-position: -15% 70%;
   padding-top: 1.8125rem;
 }
 .is-header .is-navbar__wrapper-left {
@@ -13600,6 +13600,9 @@ body {
     display: block;
     border: none;
     background-color: transparent;
+  }
+  .is-header .is-navbar__wrapper-left__toggler.show {
+    opacity: 0.5;
   }
   .is-header .is-navbar__wrapper-right {
     display: none;
