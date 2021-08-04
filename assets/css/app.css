@@ -13263,6 +13263,9 @@ body {
   background-color: #00143C;
   transition: all 0.3s;
 }
+.is-wrapper .is-advantages__switcher__mobile {
+  display: none;
+}
 .is-wrapper .is-product {
   padding: 8.125rem 0 10rem;
 }
@@ -13587,7 +13590,7 @@ body {
   .is-header {
     padding: 0;
     background-size: 250%;
-    background-position: -7% -600%;
+    background-position: -7% 60%;
   }
   .is-header .is-navbar {
     background-color: #fff;
@@ -13759,11 +13762,60 @@ body {
   }
   .is-header__intro__wrapper_description {
     max-width: 64%;
+    margin-bottom: 5rem;
   }
   .is-header__intro__wrapper_description p {
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.16px;
+  }
+
+  .is-wrapper .is-advantages {
+    padding: 1rem;
+  }
+  .is-wrapper .is-advantages__tabs {
+    display: none;
+  }
+  .is-wrapper .is-advantages__switcher {
+    background-color: transparent;
+    padding: 0;
+  }
+  .is-wrapper .is-advantages__switcher #advantages-tabs {
+    display: none;
+  }
+  .is-wrapper .is-advantages__switcher__mobile {
+    display: block;
+  }
+  .is-wrapper .is-advantages__switcher__mobile .uk-accordion {
+    padding: 1rem;
+  }
+  .is-wrapper .is-advantages__switcher__mobile .uk-accordion li {
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  .is-wrapper .is-advantages__switcher__mobile .uk-accordion li .uk-accordion-title {
+    padding: 1.625rem 0;
+    color: #0C0C0C;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 34px;
+    font-family: Raleway, sans-serif;
+  }
+  .is-wrapper .is-advantages__switcher__mobile .uk-accordion li .uk-accordion-title:before {
+    display: none;
+  }
+  .is-wrapper .is-advantages__switcher__mobile .uk-accordion li .uk-accordion-content {
+    margin-top: 0;
+    background-color: #fff;
+    padding: 1.25rem 1.25rem 0;
+  }
+  .is-wrapper .is-advantages__switcher__mobile .uk-accordion li .uk-accordion-content .is-advantages__switcher__btn {
+    padding: 1.125rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.25rem;
   }
 }
 /*# sourceMappingURL=app.css.map */

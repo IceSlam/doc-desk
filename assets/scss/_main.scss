@@ -394,6 +394,9 @@ body {
           transition: all .3s;
         }
       }
+      &__mobile {
+        display: none;
+      }
     }
   }
   .is-product {
