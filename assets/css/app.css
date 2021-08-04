@@ -13586,6 +13586,8 @@ body {
 @media screen and (max-width: 429px) {
   .is-header {
     padding: 0;
+    background-size: 250%;
+    background-position: -7% -600%;
   }
   .is-header .is-navbar {
     background-color: #fff;
@@ -13670,6 +13672,26 @@ body {
   .is-header .is-navbar__wrapper__sidebar.show {
     left: 0;
     transition: all 0.3s ease-in-out;
+  }
+  .is-header__intro {
+    margin-top: 7.125rem;
+    padding: 0 27px;
+    background-color: rgba(255, 255, 255, 0.53);
+  }
+  .is-header__intro__wrapper_title {
+    text-align: left;
+    line-height: 100%;
+    font-size: 5rem;
+    letter-spacing: 0.16px;
+    max-width: 80%;
+  }
+  .is-header__intro__wrapper_description {
+    max-width: 64%;
+  }
+  .is-header__intro__wrapper_description p {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.16px;
   }
 }
 /*# sourceMappingURL=app.css.map */

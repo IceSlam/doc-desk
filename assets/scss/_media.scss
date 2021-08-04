@@ -2,6 +2,9 @@
   // Header
   .is-header {
     padding: 0;
+    -webkit-background-size: 250%;
+    background-size: 250%;
+    background-position: -7% -600%;
     .is-navbar {
       background-color: #fff;
       &__wrapper {
@@ -91,6 +94,28 @@
           &.show {
             left: 0;
             transition: all .3s ease-in-out;
+          }
+        }
+      }
+    }
+    &__intro {
+      margin-top: 7.125rem;
+      padding: 0 27px;
+      background-color: rgba(255,255,255,.53);
+      &__wrapper {
+        &_title {
+          text-align: left;
+          line-height: 100%;
+          font-size: 5rem;
+          letter-spacing: 0.16px;
+          max-width: 80%;
+        }
+        &_description {
+          max-width: 64%;
+          p {
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.16px;
           }
         }
       }
