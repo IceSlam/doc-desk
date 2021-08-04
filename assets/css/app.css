@@ -13662,7 +13662,7 @@ body {
     position: fixed;
     top: 64px;
     bottom: 0;
-    background: #fff;
+    background-color: #F9F7F7;
     z-index: 300;
     left: -100%;
     width: 100%;
@@ -13672,6 +13672,78 @@ body {
   .is-header .is-navbar__wrapper__sidebar.show {
     left: 0;
     transition: all 0.3s ease-in-out;
+  }
+  .is-header .is-navbar__wrapper__sidebar__menu {
+    list-style: none;
+    padding: 3rem 2rem 0.5rem;
+    border-bottom: 1px solid #E1E1E1;
+    margin: 0 1rem;
+  }
+  .is-header .is-navbar__wrapper__sidebar__menu li {
+    margin-left: 0.75rem;
+  }
+  .is-header .is-navbar__wrapper__sidebar__menu li a {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 170%;
+    color: #0C0C0C;
+    margin-bottom: 1.5rem;
+    display: block;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .is-header .is-navbar__wrapper__sidebar__menu li a:hover {
+    color: #3B2AFF;
+    transition: all 0.3s;
+  }
+  .is-header .is-navbar__wrapper__sidebar__links {
+    display: block;
+    padding: 2rem 2rem 0.5rem;
+    margin: 0 1rem;
+  }
+  .is-header .is-navbar__wrapper__sidebar__links .link {
+    display: block;
+    margin-left: 0.75rem;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #0C0C0C;
+    text-decoration: none;
+    transition: all 0.3s;
+    line-height: 170%;
+    text-transform: uppercase;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+  .is-header .is-navbar__wrapper__sidebar__links .link:hover {
+    color: #3B2AFF;
+    transition: all 0.3s;
+  }
+  .is-header .is-navbar__wrapper__sidebar__links .button {
+    display: inline-block;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    border: 2px solid #3B2AFF;
+    box-sizing: border-box;
+    box-shadow: 0 0 33.75px rgba(184, 184, 184, 0.26);
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3B2AFF;
+    text-transform: none;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .is-header .is-navbar__wrapper__sidebar__links .button:hover {
+    background-color: #3B2AFF;
+    transition: all 0.3s;
+    color: #ffffff;
   }
   .is-header__intro {
     margin-top: 7.125rem;
