@@ -13349,7 +13349,9 @@ body {
   color: #3B2AFF;
 }
 .is-wrapper .is-what-can__switcher {
-  margin-top: 4rem;
+  padding: 4rem 1.875rem;
+  background-color: #fff;
+  border-radius: 0 10px 10px 10px;
 }
 .is-wrapper .is-what-can__switcher__card {
   background-color: #fff;
