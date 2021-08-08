@@ -608,6 +608,19 @@ body {
           }
         }
       }
+      .is-what-can__tabs__tabs {
+        margin-left: 0.1rem;
+        &:before {
+          display: none;
+        }
+        & > * {
+          flex: 1 0 0%;
+        }
+        & > li {
+          padding: 0 12px;
+          cursor: pointer;
+        }
+      }
     }
   }
   .is-integration {

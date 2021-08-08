@@ -13439,6 +13439,18 @@ body {
   transform: rotate(225deg);
   transition: all 0.3s;
 }
+.is-wrapper .is-what-can__switcher .is-what-can__tabs__tabs {
+  margin-left: 0.1rem;
+}
+.is-wrapper .is-what-can__switcher .is-what-can__tabs__tabs:before {
+  display: none;
+}
+.is-wrapper .is-what-can__switcher .is-what-can__tabs__tabs > * {
+  flex: 1 0 0%;
+}
+.is-wrapper .is-what-can__switcher .is-what-can__tabs__tabs > li {
+  padding: 0 12px;
+}
 .is-wrapper .is-integration {
   padding-top: 8.25rem;
   padding-bottom: 3rem;
