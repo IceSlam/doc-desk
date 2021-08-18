@@ -4,7 +4,7 @@ body {
 }
 
 .is-header {
-  background: url("../img/header_bg.webp"), #fff;
+  background: url("../img/header_bg.jpg"), #fff;
   min-height: 600px;
   -webkit-background-size: 115%;
   background-size: 115%;
@@ -722,7 +722,7 @@ body {
       font-family: Raleway, sans-serif;
     }
     &__card {
-      box-shadow: 0px 0px 30px rgba(184, 184, 184, 0.26);
+      box-shadow: 0 0 30px rgba(184, 184, 184, 0.26);
       background-color: #fff;
       margin-bottom: 1.5rem;
       &-img {
@@ -790,5 +790,28 @@ body {
         }
       }
     }
+    .card {
+      &:nth-child(2) {
+        .is-what-says__card-img {
+          background: url('../img/what_says_1.jpg');
+        }
+      }
+      &:nth-child(3) {
+        .is-what-says__card-img {
+          background: url('../img/what_says_2.jpg');
+        }
+      }
+      &:nth-child(4) {
+        .is-what-says__card-img {
+          background: url('../img/what_says_3.jpg');
+        }
+      }
+      &:last-child {
+        .is-what-says__card-img {
+          background: url('../img/what_says_4.jpg');
+        }
+      }
+    }
   }
 }
+
