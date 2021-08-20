@@ -13,7 +13,7 @@ const filename = (ext) => isDev ? `[name].${ext}` : `app.bundle.[contenthash].${
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    mode: 'development',
+    mode: 'production',
     entry: './js/app.js',
     devtool: isProd ? false : 'source-map',
     output: {
@@ -104,6 +104,7 @@ module.exports = {
         ]
     },
     optimization: {
+        minimize: true,
         minimizer: [
             new CssMinimizerPlugin({
                 minimizerOptions: {
