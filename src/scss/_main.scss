@@ -1,3 +1,20 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $mainColorBlue $mainBodyBg;
+  transform: all .3s;
+  &::-webkit-scrollbar {
+    width: 6px !important;
+    transition: all .3s;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $mainBodyBg !important;
+    transform: all .3s;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $mainColorBlue !important;
+  }
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: $mainBodyBg;
