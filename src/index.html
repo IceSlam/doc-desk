@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns="">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -84,7 +84,7 @@
               <a class="link" href="mailto:mail@docdesk.ru">
                 mail@docdesk.ru
               </a>
-              <a href="!#" class="button">
+              <a class="button"  uk-toggle="target: #nav-feedback">
                 Обратная связь
               </a>
             </div>
@@ -96,9 +96,45 @@
             <a class="is-navbar__wrapper-right__link" href="mailo:mail@docdesk.ru">
               mail@docdesk.ru
             </a>
-            <a class="is-navbar__wrapper-right__link button" href="!#">
+            <a class="is-navbar__wrapper-right__link button" uk-toggle="target: #nav-feedback">
               Обратная связь
             </a>
+          </div>
+        </div>
+
+        <div id="nav-feedback" class="uk-flex-top is-advantages__switcher__card__modal" uk-modal>
+          <div class="uk-modal-dialog uk-margin-auto-vertical is-advantages__switcher__card__modal__dialog">
+            <h3 class="uk-modal-title">
+              Обратная связь
+            </h3>
+            <form action="" class="is-forms__nav-feedback">
+              <div class="input-group">
+                <label for="nav-feedback-name">
+                  Имя
+                </label>
+                <input type="text" id="nav-feedback-name" placeholder="Имя">
+              </div>
+              <div class="input-group">
+                <label for="nav-feedback-email">
+                  E-mail
+                </label>
+                <input type="email" id="nav-feedback-email" placeholder="E-mail">
+              </div>
+              <div class="input-group">
+                <label for="nav-feedback-tel">
+                  Телефон
+                </label>
+                <input type="tel" id="nav-feedback-tel" placeholder="Телефон">
+                <input type="button" value="Отправить" />
+              </div>
+            </form>
+
+            <button class="uk-modal-close" type="button">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.7921 1.209C29.4593 1.87669 29.4593 2.95924 28.7921 3.62694L3.645 28.7909C2.97776 29.4586 1.89593 29.4586 1.22868 28.7909C0.561429 28.1232 0.561431 27.0406 1.22868 26.3729L26.3758 1.209C27.043 0.5413 28.1248 0.5413 28.7921 1.209Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.7724 28.791C28.1051 29.4587 27.0233 29.4587 26.356 28.791L1.20897 3.62711C0.54172 2.95941 0.541719 1.87686 1.20897 1.20917C1.87622 0.54147 2.95804 0.541471 3.62529 1.20917L28.7724 26.3731C29.4396 27.0408 29.4396 28.1233 28.7724 28.791Z" fill="black"/>
+              </svg>
+            </button>
           </div>
         </div>
       </nav>

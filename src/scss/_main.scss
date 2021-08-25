@@ -3,6 +3,67 @@ body {
   background-color: $mainBodyBg;
 }
 
+.is-forms {
+  &__nav-feedback {
+    .input-group {
+      display: block;
+      margin-bottom: 1rem;
+      label,
+      input {
+        display: block;
+        width: 100%;
+      }
+      label {
+        font-family: Raleway,sans-serif;
+        font-size: 1rem;
+        color: $mainColorBlack;
+        font-weight: 600;
+      }
+      input {
+        padding: 1rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none;
+        color: $mainColorBlack;
+        font-family: Raleway, sans-serif;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        border: 2px solid rgba(59,42,255,.5);
+        margin-top: .5rem;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &:hover,
+        &:focus {
+          border: 2px solid rgb(59,42,255);
+          -webkit-transition: all .3s;
+          -moz-transition: all .3s;
+          -ms-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s;
+        }
+      }
+    }
+    input[type=button] {
+      max-width: 200px;
+      background: rgb(59,42,255);
+      color: #fff;
+      margin: 1rem auto 0;
+      font-family: Raleway, sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        background: #fff;
+        color: rgb(59,42,255);
+      }
+    }
+  }
+}
+
 .is-header {
   background: url("../img/header_bg.jpg"), #fff;
   min-height: 600px;
@@ -95,6 +156,11 @@ body {
             -ms-transition: all .3s;
             -o-transition: all .3s;
             transition: all .3s;
+            outline: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
             &:hover {
               background-color: #3B2AFF;
               -webkit-transition: all .3s;
@@ -103,6 +169,7 @@ body {
               -o-transition: all .3s;
               transition: all .3s;
               color: #ffffff;
+              outline: none;
             }
           }
         }
