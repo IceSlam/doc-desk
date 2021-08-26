@@ -1,10 +1,16 @@
 @media screen and (max-width: 429px) {
   // Header
+  * {
+    --bs-gutter-x: 0;
+    .row {
+      --bs-gutter-x: 0;
+    }
+  }
   .is-header {
-    padding: 0;
     -webkit-background-size: 250%;
     background-size: 250%;
     background-position: -7% 60%;
+    padding: 0;
     .is-navbar {
       background-color: #fff;
       &__wrapper {
@@ -180,7 +186,7 @@
     }
     &__intro {
       margin-top: 7.125rem;
-      padding: 0 27px;
+      padding: 0;
       background-color: rgba(255,255,255,.53);
       &__wrapper {
         &_title {
@@ -206,7 +212,7 @@
   // Main wrapper
   .is-wrapper {
     .is-advantages {
-      padding: 1rem;
+      padding: 1rem 0;
       &__tabs {
         display: none;
       }
@@ -253,6 +259,17 @@
           }
         }
       }
+    }
+    .is-what-can {
+      .container {
+        padding: 0;
+      }
+    }
+    .is-integration {
+      padding: 8.25rem 0 3rem;
+    }
+    .is-what-says {
+      padding: 2rem 0 4.25rem;
     }
   }
 }
