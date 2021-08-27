@@ -29,21 +29,11 @@ module.exports = {
         host: process.env.HOST || '127.0.0.1',
         open: true,
         hot: true,
-        static: {
-            directory: path.join(__dirname, 'public'),
-            watch: true,
-        },
-        watchFiles: {
-            paths: ['src/*.html', 'public/*'],
-            options: {
-                usePolling: false,
-            },
-        },
         liveReload: true,
         devMiddleware: {
             index: true,
             mimeTypes: { "text/html": ["phtml"] },
-            serverSideRender: true,
+            serverSideRender: false,
             writeToDisk: true,
         },
         client: {
