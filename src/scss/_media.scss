@@ -368,6 +368,19 @@
     }
     .is-integration {
       padding: 8.25rem 0 3rem;
+      &__list {
+        &-item {
+          padding-right: 2rem;
+          padding-left: 3rem;
+          &:before {
+            left: -60px;
+            top: 0;
+          }
+          ul {
+            display: none;
+          }
+        }
+      }
     }
     .is-what-says {
       padding: 2rem 0 4.25rem;

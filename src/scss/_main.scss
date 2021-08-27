@@ -241,6 +241,7 @@ body {
 }
 
 .is-footer {
+  position: relative;
   background-color: #fff;
   padding: 2rem 3.125rem;
   &__wrapper {
@@ -284,6 +285,24 @@ body {
         font-size: 14px;
         line-height: 170%;
       }
+    }
+  }
+  .scroll-to-top {
+    position: absolute;
+    bottom: 3.125rem;
+    right: 3.125rem;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    color: $mainColorBlack;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity .3s;
+    .show {
+      opacity: 1;
+      transition: opacity .3s;
     }
   }
 }

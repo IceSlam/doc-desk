@@ -30,6 +30,12 @@ module.exports = {
         open: true,
         hot: true,
         liveReload: true,
+        devMiddleware: {
+            index: true,
+            mimeTypes: { "text/html": ["html"] },
+            serverSideRender: true,
+            writeToDisk: true,
+        },
         headers: {
             'X-Powered-By': process.env.POWERED,
             'Developed-By': process.env.POWERED
