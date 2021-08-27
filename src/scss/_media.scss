@@ -384,6 +384,9 @@
     }
     .is-what-says {
       padding: 2rem 0 4.25rem;
+      .card {
+        padding: 1.5rem;
+      }
     }
   }
 }
