@@ -23,26 +23,13 @@ module.exports = {
         assetModuleFilename: 'assets/[path][name].[contenthash][ext]'
     },
     devServer: {
-        historyApiFallback: false,
+        historyApiFallback: true,
         compress: true,
         port: process.env.PORT || 3333,
         host: process.env.HOST || '127.0.0.1',
         open: true,
         hot: true,
         liveReload: true,
-        devMiddleware: {
-            index: true,
-            mimeTypes: { "text/html": ["phtml"] },
-            serverSideRender: false,
-            writeToDisk: true,
-        },
-        client: {
-            progress: true,
-            overlay: {
-                errors: true,
-                warnings: false
-            }
-        },
         headers: {
             'X-Powered-By': process.env.POWERED,
             'Developed-By': process.env.POWERED
