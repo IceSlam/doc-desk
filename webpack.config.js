@@ -28,13 +28,47 @@ module.exports = {
         port: process.env.PORT || 3333,
         host: process.env.HOST || '127.0.0.1',
         open: true,
-        hot: true,
+        hot: false,
+        client: {
+            overlay: {
+                errors: true,
+                warnings: true,
+            },
+            progress: true
+        },
+        static: [
+            {
+                directory: path.join(__dirname, 'app'),
+            },
+            {
+                directory: path.join(__dirname, 'src/scss'),
+            },
+            {
+                directory: path.join(__dirname, 'src/img'),
+            },
+            {
+                directory: path.join(__dirname, 'src/js'),
+            },
+            {
+                publicPath: './'
+            },
+            {
+                serveIndex: true
+            }
+        ],
         liveReload: true,
         devMiddleware: {
             index: true,
             mimeTypes: { "text/html": ["html"] },
+            publicPath: path.join(__dirname, 'app'),
             serverSideRender: true,
             writeToDisk: true,
+        },
+        watchFiles: {
+            paths: ['src/*.html', 'src/img/*.jpg'],
+            options: {
+                usePolling: true,
+            },
         },
         headers: {
             'X-Powered-By': process.env.POWERED,
