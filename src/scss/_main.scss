@@ -288,7 +288,7 @@ body {
     }
   }
   .scroll-to-top {
-    position: absolute;
+    position: fixed;
     bottom: 3.125rem;
     right: 3.125rem;
     font-family: Raleway, sans-serif;
@@ -298,11 +298,13 @@ body {
     line-height: 170%;
     color: $mainColorBlack;
     text-decoration: none;
-    opacity: 1;
-    transition: opacity .3s;
-    .show {
+    opacity: 0;
+    transition: all .3s;
+    visibility: hidden;
+    &.show {
       opacity: 1;
-      transition: opacity .3s;
+      transition: all .3s;
+      visibility: visible;
     }
   }
 }
