@@ -434,18 +434,14 @@
       .cards {
         max-height: 1684px;
         overflow-y: hidden;
-        transition: all .3s;
+        transition: all .6s;
         &.show {
           max-height: 10000px;
-          transition: all .3s;
+          transition: all .6s;
         }
       }
       .card {
         padding: 0 1.5rem 1.5rem;
-        //&:nth-child(3),
-        //&:last-child {
-        //  display: none;
-        //}
       }
       &__card {
         margin-bottom: 0;
