@@ -434,6 +434,11 @@
       .cards {
         max-height: 1684px;
         overflow-y: hidden;
+        transition: all .3s;
+        &.show {
+          max-height: 10000px;
+          transition: all .3s;
+        }
       }
       .card {
         padding: 0 1.5rem 1.5rem;

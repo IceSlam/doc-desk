@@ -3,8 +3,9 @@ import '../scss/app.scss'
 
 // JS files and code
 // System
-import './toggler'
-import './scrolltop'
+import './MobileMenuToggler'
+import './ScrollToTop'
+import './WhatSaysMoreBtn'
 
 // UIKit
 import './uikit'
