@@ -69,10 +69,6 @@ module.exports = {
             options: {
                 usePolling: true,
             },
-        },
-        headers: {
-            'X-Powered-By': process.env.POWERED,
-            'Developed-By': process.env.POWERED
         }
     },
     plugins: [
