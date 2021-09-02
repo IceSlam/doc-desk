@@ -426,6 +426,19 @@
           ul {
             display: none;
           }
+          &__btn {
+            display: block;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 30px;
+            text-decoration-line: underline;
+            color: #3B2AFF;
+          }
         }
       }
     }
