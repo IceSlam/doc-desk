@@ -432,7 +432,7 @@
     .is-what-says {
       padding: 2rem 0 4.25rem;
       .cards {
-        max-height: 1684px;
+        max-height: 1674px;
         overflow-y: hidden;
         transition: all .6s;
         &.show {
@@ -475,6 +475,7 @@
         text-align: center;
         padding: 1.5rem 0;
         transition: all .3s;
+        margin-top: .5rem;
         &:hover {
           background: $mainColorDarkBlue;
           transition: all .3s;
