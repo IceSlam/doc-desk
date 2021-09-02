@@ -435,6 +435,13 @@
         max-height: 1674px;
         overflow-y: hidden;
         transition: all .6s;
+        &:nth-child(2) {
+          .is-what-says__card {
+            -webkit-box-shadow: 0 0 30px -10px hsla(0,0%,72%,.26);
+            -moz-box-shadow: 0 0 30px -10px hsla(0,0%,72%,.26);
+            box-shadow: 0 0 30px -10px hsla(0,0%,72%,.26);
+          }
+        }
         &.show {
           max-height: 10000px;
           transition: all .6s;
