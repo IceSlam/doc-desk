@@ -445,8 +445,16 @@
       }
       &__card {
         margin-bottom: 0;
+        height: 818px;
         &-img {
           background-position: top center !important;
+        }
+        &-content {
+          &__description {
+            p {
+              font-size: 100%;
+            }
+          }
         }
       }
       .btn {
